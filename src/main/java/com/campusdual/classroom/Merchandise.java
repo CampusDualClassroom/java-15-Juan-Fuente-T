@@ -1,7 +1,6 @@
 package com.campusdual.classroom;
 
 public abstract class Merchandise {
-
 	protected String name;
 	protected String uniqueId;
 	protected String responsibleId;
@@ -9,6 +8,7 @@ public abstract class Merchandise {
 	protected String area;
 	protected String shelf;
 	protected int quantity;
+
 
 	public Merchandise(String name, String uniqueId, String responsibleId) {
 		this.name = name;
@@ -95,4 +95,5 @@ public abstract class Merchandise {
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
 	}
+
 }
