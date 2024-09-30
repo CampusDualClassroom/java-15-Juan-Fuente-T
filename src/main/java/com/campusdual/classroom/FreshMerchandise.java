@@ -14,12 +14,13 @@ public class FreshMerchandise extends Merchandise {
         this.expirationDate = expirationDate;
     }
 
+    @Override
     public StringBuilder getSpecificData() {
         StringBuilder builder = new StringBuilder();
         builder.append("Localizacion: ");
         builder.append(super.getLocation());
         builder.append(", Caducidad: ");
-        builder.append(this.getFormattedDate(expirationDate));
+        builder.append(this.getFormattedDate(this.expirationDate));
         return builder;
     }
 
@@ -29,7 +30,7 @@ public class FreshMerchandise extends Merchandise {
 
 
     public Date getExpirationDate() {
-        return expirationDate;
+        return this.expirationDate;
     }
 
     public String getFormattedDate(Date expirationDate) {
